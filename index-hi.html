@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+
+            <div class="pataNhi">
+                <div class="select">
+                    <div class="i i1"><i class="fa-solid fa-language"></i></div>
+                    <select class="languageSelect">
+                        <option value="english">English</option>
+                        <option value="हिंदी" selected>हिंदी</option>
+                    </select>
+                    <div class="i i2"><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+
+                <div class="sign-in hi-sign-in">
+                    <a href="#">साइन इन करें</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerImage">
+            <div class="back" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);"></div>
+            <img src="top.jpg">
+        </div>
+
+        <div class="heroSection">
+            <div class="text">
+                <h1>असीमित फिल्में, टीवी शो और बहुत कुछ।</h1>
+                <p>कहीं भी देखें। किसी भी समय रद्द करें।</p>
+            </div>
+
+            <div class="emailForm">
+                <p>देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या पुनः आरंभ करने के लिए अपना ईमेल दर्ज करें।</p>
+
+                <form action="backend.php">
+                    <div class="address">
+                        <div class="typeEmail">
+                            <label class="emailLabel" for="topEmail">ईमेल एड्रेस</label>
+                            <input type="email" class="email" id="topEmail" required>
+                            <span class="hidden err err-emailRequired"><i class="fa-regular fa-circle-xmark"></i> ईमेल ज़रूरी है</span>
+                            <span class="hidden err err-emailInvalid"><i class="fa-regular fa-circle-xmark"></i> कृपया सही ईमेल एड्रेस डालें</span>
+                        </div>
+                        <button>
+                            शुरू करें >
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainDiv">
+            <div class="content">
+                <div class="mainText">
+                    <h3>अपने टीवी पर आनंद लें</h3>
+                    <p>स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, ब्लू-रे प्लेयर और बहुत कुछ पर देखें।</p>
+                </div>
+
+                <div class="image">
+                    <div class="mainImage">
+                        <img src="tv.png">
+                    </div>
+
+                    <div class="video">
+                        <video src="video-in-tv.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainDiv">
+            <div class="content reverse">
+                <div class="mainText reverse-margin-text">
+                    <h3>ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें</h3>
+                    <p>अपने पसंदीदा को आसानी से सहेजें और हमेशा देखने के लिए कुछ न कुछ रखें।</p>
+                </div>
+
+                <div class="image">
+                    <div class="mainImage">
+                        <img src="mobile.jpg">
+                    </div>
+
+                    <div class="extraText">
+                        <div class="boxShot">
+                            <img src="boxshot.png">
+                        </div>
+                        <div class="remaining">
+                            <h3>Stranger Things</h3>
+                            <p>डाउनलोड हो रहा है...</p>
+                        </div>
+                        <div class="gif"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainDiv">
+            <div class="content">
+                <div class="mainText">
+                    <h3>हर जगह देखें</h3>
+                    <p>अपने फोन, टैबलेट, लैपटॉप और टीवी पर असीमित फिल्में और टीवी शो स्ट्रीम करें।</p>
+                </div>
+
+                <div class="image">
+                    <div class="mainImage">
+                        <img src="mac.png">
+                    </div>
+
+                    <div class="video fitVideo">
+                        <video src="video-in-mac.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainDiv lastMain">
+            <div class="content reverse">
+                <div class="mainText reverse-margin-text">
+                    <h3>बच्चों के लिए प्रोफ़ाइल बनाएं</h3>
+                    <p>बच्चों को केवल उनके लिए बनाई गई जगह में उनके पसंदीदा पात्रों के साथ साहसिक यात्रा पर भेजें - आपकी सदस्यता के साथ निःशुल्क।</p>
+                </div>
+
+                <div class="image">
+                    <div class="mainImage">
+                        <img src="children.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="upperFoot">
+            <div class="faq">
+                <h1>अक्सर पूछे जाने वाले प्रशन</h1>
+                <div class="questions">
+                    <ul>
+                        <li class="questionsListItems">
+                            <h3>
+                                <button class="questionsButton" data-target="text1">
+                                    <span>Netflix क्या है?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h3>
+                            <div class="answer hidden" id="text1">
+                                <span>
+                                    Netflix एक स्ट्रीमिंग सेवा है जो हजारों इंटरनेट से जुड़े उपकरणों पर विभिन्न प्रकार के पुरस्कार विजेता टीवी शो, फिल्में, एनीमे, वृत्तचित्र और बहुत कुछ प्रदान करती है।<br><br>
+                                    आप जब चाहें, जितना चाहें उतना देख सकते हैं, बिना किसी विज्ञापन के - सब कुछ एक कम मासिक कीमत पर। खोजने के लिए हमेशा कुछ नया होता है, और हर हफ्ते नए टीवी शो और फिल्में जोड़ी जाती हैं!
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="questionsListItems">
+                            <h3>
+                                <button class="questionsButton" data-target="text2">
+                                    <span>Netflix की लागत कितनी है?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h3>
+                            <div class="answer hidden" id="text2">
+                                <span>
+                                    अपने स्मार्टफोन, टैबलेट, स्मार्ट टीवी, लैपटॉप या स्ट्रीमिंग डिवाइस पर Netflix देखें, सब कुछ एक निश्चित मासिक शुल्क पर। योजनाएं ₹149 से ₹649 प्रति माह तक हैं। कोई अतिरिक्त लागत नहीं, कोई अनुबंध नहीं।
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="questionsListItems">
+                            <h3>
+                                <button class="questionsButton" data-target="text3">
+                                    <span>मैं कहाँ देख सकता हूँ?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h3>
+                            <div class="answer hidden" id="text3">
+                                <span>
+                                    कहीं भी, कभी भी देखें. अपने पर्सनल कंप्यूटर से या स्मार्ट टीवी, स्मार्टफोन, टैबलेट, स्ट्रीमिंग मीडिया प्लेयर और गेम कंसोल सहित Netflix ऐप प्रदान करने वाले किसी भी इंटरनेट से जुड़े डिवाइस पर Netflix.com पर वेब पर तुरंत देखने के लिए अपने Netflix खाते से साइन इन करें।<br><br>
+                                    आप अपने पसंदीदा शो को iOS या Android ऐप से भी डाउनलोड कर सकते हैं। जब आप यात्रा में हों और इंटरनेट कनेक्शन के बिना भी देखने के लिए डाउनलोड का उपयोग करें। Netflix को अपने साथ कहीं भी ले जाएं।
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="questionsListItems">
+                            <h3>
+                                <button class="questionsButton" data-target="text4">
+                                    <span>मैं कैसे रद्द करूं?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h3>
+                            <div class="answer hidden" id="text4">
+                                <span>
+                                    Netflix लचीला है। इसमें कोई कष्टप्रद अनुबंध और कोई प्रतिबद्धता नहीं है। आप दो क्लिक में आसानी से अपना खाता ऑनलाइन रद्द कर सकते हैं। कोई रद्दीकरण शुल्क नहीं है - अपना खाता किसी भी समय शुरू या बंद करें।
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="questionsListItems">
+                            <h3>
+                                <button class="questionsButton" data-target="text5">
+                                    <span>मैं Netflix पर क्या देख सकता हूँ?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h3>
+                            <div class="answer hidden" id="text5">
+                                <span>
+                                    Netflix के पास फीचर फिल्मों, वृत्तचित्रों, टीवी शो, एनीमे, पुरस्कार विजेता नेटफ्लिक्स मूल और बहुत कुछ की एक विस्तृत लाइब्रेरी है। जितना चाहो, जब चाहो देखो।
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="questionsListItems">
+                            <h3>
+                                <button class="questionsButton" data-target="text6">
+                                    <span>क्या Netflix बच्चों के लिए अच्छा है?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h3>
+                            <div class="answer hidden" id="text6">
+                                <span>
+                                    माता-पिता को नियंत्रण देने के लिए Netflix बच्चों के अनुभव को आपकी सदस्यता में शामिल किया गया है, जबकि बच्चे अपने स्थान पर परिवार के अनुकूल टीवी शो और फिल्मों का आनंद लेते हैं।<br><br>
+                                    बच्चों की प्रोफ़ाइल पिन-संरक्षित अभिभावक नियंत्रण के साथ आती हैं जो आपको बच्चों द्वारा देखी जाने वाली सामग्री की परिपक्वता रेटिंग को प्रतिबंधित करने और उन विशिष्ट शीर्षकों को ब्लॉक करने देती है जिन्हें आप नहीं चाहते कि बच्चे देखें।
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="emailForm bottom">
+                    <p>देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या पुनः आरंभ करने के लिए अपना ईमेल दर्ज करें।</p>
+    
+                    <form action="backend.php">
+                        <div class="address">
+                            <div class="typeEmail">
+                                <label class="emailLabel" for="bottomEmail">ईमेल एड्रेस</label>
+                                <input type="email" class="email" id="bottomEmail" required>
+                                <span class="hidden err err-emailRequired"><i class="fa-regular fa-circle-xmark"></i> ईमेल ज़रूरी है</span>
+                                <span class="hidden err err-emailInvalid"><i class="fa-regular fa-circle-xmark"></i> कृपया सही ईमेल एड्रेस डालें</span>
+                            </div>
+                            <button>
+                                शुरू करें >
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="lowerFoot">
+            <div class="pannel">
+                <div class="pannel1">
+                    कोई सवाल है? <a href="#">000-800-919-1694</a> पर कॉल करें
+                </div>
+                
+                <div class="pannel2">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">सहायता केंद्र</a></li>
+                        <li><a href="#">खाता</a></li>
+                        <li><a href="#">मीडिया केंद्र</a></li>
+                    </ul>
+                </div>
+                
+                <div class="pannel3">
+                    <div class="pataNhi">
+                        <div class="select">
+                            <div class="i i1"><i class="fa-solid fa-language"></i></div>
+                            <select class="languageSelect">
+                                <option value="english">English</option>
+                                <option value="हिंदी" selected>हिंदी</option>
+                            </select>
+                            <div class="i i2"><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pannel4">
+                    Netflix भारत
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
